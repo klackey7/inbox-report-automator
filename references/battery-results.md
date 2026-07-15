@@ -343,3 +343,20 @@ re-test (fresh session authors the traps and grades) is the one remaining
 structural validation. It is explicitly deferred, not a ship blocker — the
 contract stands on its own as a behavioral spec regardless of the A/B evidence's
 strength.
+
+---
+
+# Delta study executed (2026-07-15): near-zero behavioral delta
+
+The prerequisite the port always lacked — a measured Fable 5 ↔ Opus 4.8 delta —
+was run (both models invokable here). 16 prompts × 3 reps × 2 models, dual-judge
+(both models, blinded, 96 verdicts). Result: **7 of 8 behavioral axes are
+`~even` with both judges agreeing**; the only lean (scope-discipline, Fable
+tighter) is judge-DISPUTED, i.e. self-preference bias. Opus 4.8 already behaves
+like Fable 5 on these dimensions — which explains why the manual never moved
+trap outcomes. The one real, consistent difference is **stylistic**: Opus leans
+to more scaffolding / broader scope / trailing "want me to…" questions; Fable
+leans tighter and more self-contained. Full read in `delta-study/FINDINGS.md`;
+generated data in `delta-study/delta-report.md`. Implication: stop expanding the
+rigor manual; the port's real (small) job is tone/verbosity calibration, not
+reasoning.
