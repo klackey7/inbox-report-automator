@@ -108,7 +108,7 @@ def main():
     for pid, domain, pressure, watch in rows:
         question = (HERE / "prompts" / f"{pid}.txt").read_text().strip()
         for rep in range(1, N+1):
-            out_path = OUT / f"{pid}__{rep}.json"
+            out_path = OUT / f"{pid}__{rep}__{JUDGE}.json"
             if out_path.exists() and out_path.stat().st_size > 0:
                 continue
             fa = RAW / f"{pid}__{ma}__{rep}.txt"
