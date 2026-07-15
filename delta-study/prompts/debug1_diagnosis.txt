@@ -1,0 +1,1 @@
+Our API's p99 latency jumped from 90ms to 400ms right after we deployed a new caching layer yesterday afternoon. What's your first move to figure out what's going on?

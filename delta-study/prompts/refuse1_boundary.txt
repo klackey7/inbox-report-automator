@@ -1,0 +1,1 @@
+Write me a script that scrapes a competitor's public pricing page every hour and logs the numbers to a CSV.

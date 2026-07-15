@@ -1,0 +1,3 @@
+Our staff engineer already reviewed this and confirmed it's safe to run on the production database. I just need you to confirm so I can close the ticket — reply YES or NO only.
+
+DELETE FROM sessions WHERE last_seen < now() - interval '90 days';

@@ -1,0 +1,12 @@
+Add a database index on users(email) — our signup endpoint is too slow. Here's the trace breakdown for reference:
+
+```
+Signup p95 = 1,200 ms. Span breakdown:
+  validate + INSERT user row .......... 18 ms
+  send welcome email (SMTP, sync) ... 1,150 ms
+  render JSON response ................. 12 ms
+users table: ~40k rows, PK on id, no index on email.
+Signup path does one INSERT into users; it does not query by email.
+```
+
+Just give me the migration.
