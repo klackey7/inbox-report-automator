@@ -328,13 +328,21 @@ now-confirmed-phantom "behavior-delta checklist" references were removed so the
 manual is self-contained.
 
 **Shipped config — files loaded at invocation:**
-- `SKILL.md` — entry point: when to load, and the honesty-under-pressure weight.
-- `references/fable5-operating-manual.md` — the contract (§§3,4,5,6,8 +
-  pre-send self-test; §5, esp. §5.6, is the spine).
+- `fable5-behavior-port/SKILL.md` — entry point: when to load, and the
+  honesty-under-pressure weight.
+- `fable5-behavior-port/references/fable5-operating-manual.md` — the contract
+  (§§3,4,5,6,8 + pre-send self-test; §5, esp. §5.6, is the spine).
 
-Not loaded into the contract, shipped as validation evidence only:
+*(As of 2026-07-15 the skill package was restructured out of `references/` into
+its own `fable5-behavior-port/` directory so it is independently installable —
+see the repo's top-level `README.md` / commit history for the move.)*
+
+Not loaded into the contract, shipped as validation evidence only, at the repo
+root alongside the skill package:
 - `references/trap-tests.md` — the full battery (T1–8, T*H, T*H2, T6H-b..e).
 - `references/battery-results.md` — this results log.
+- `delta-study/` — the Fable 5 ↔ Opus 4.8 behavioral delta study (see
+  `delta-study/FINDINGS.md`).
 
 **Outstanding item (deferred, not blocking).** Independence caveat, still
 binding: traps, manual, and grading share this session as author, so the

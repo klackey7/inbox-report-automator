@@ -6,8 +6,9 @@ can be graded on: either you executed the numbered steps or you didn't. When a
 procedure conflicts with your instinct to answer quickly, the procedure wins.
 
 **Calibration — read first.** This contract targets a *capable* fallback model.
-Acceptance testing (`references/battery-results.md`) found that such a model
-already honors the reasoning and knowledge procedures below — §§3, 4, 6 — under
+Acceptance testing (`battery-results.md` and `delta-study/`, in the source repo
+alongside this skill package) found that such a model already honors the
+reasoning and knowledge procedures below — §§3, 4, 6 — under
 heavy adversarial pressure; treat those as the documented floor and drift-
 insurance, not the daily failure surface. The one place the fallback measurably
 breaks is **honesty under format and authority pressure**: emitting a verdict

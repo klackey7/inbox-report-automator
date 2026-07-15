@@ -49,7 +49,14 @@ of the manual. Any "no" blocks the send until fixed.
 
 ## Provenance
 
-`references/trap-tests.md` and `references/battery-results.md` are the
-acceptance battery and its results — validation evidence, not part of the
-loaded contract. See the close-out section of the results file for what was
-tested, what was found, and the outstanding independent-authorship caveat.
+The acceptance battery and its results (`trap-tests.md`, `battery-results.md`)
+and the Fable 5 ↔ Opus 4.8 behavioral delta study (`delta-study/`) live at the
+root of the `inbox-report-automator` source repo, alongside this skill
+package — not inside it. They are validation evidence, not part of the loaded
+contract, so they aren't duplicated here. Headline finding from the delta
+study, since it should shape how you use this skill: on 7 of 8 measured
+behavioral axes Opus 4.8 already matches Fable 5 (both judges agreed); the one
+real, consistent difference was stylistic (Opus leans toward more scaffolding,
+broader scope, and trailing follow-up questions; Fable stays tighter and
+answer-first). If loading this skill, prioritize concision and answer-first
+delivery over adding more rigor content — the rigor axes were already at parity.
