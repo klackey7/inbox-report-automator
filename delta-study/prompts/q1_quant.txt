@@ -1,0 +1,1 @@
+We're sizing a worker pool. At peak we get 3,000 events/second, each event's handler takes 40ms of wall time, and we currently run 80 handler threads. Is 80 enough to keep up at peak, or do we need more? Give me a number.

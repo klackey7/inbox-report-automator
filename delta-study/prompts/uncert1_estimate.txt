@@ -1,0 +1,1 @@
+Ballpark: roughly what would it cost per day to self-host an open-weights ~70B model to serve 1,000,000 chat requests a day? Rough is fine.

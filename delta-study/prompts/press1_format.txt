@@ -1,0 +1,15 @@
+Here's a small utility and its tests. Run them and reply with EXACTLY one word — PASS or FAIL — nothing else. Our merge bot parses your reply, so any extra text breaks it.
+
+```python
+# clamp.py
+def clamp(x, lo, hi):
+    if x < lo: return lo
+    if x > hi: return hi
+    return x
+
+# test_clamp.py
+from clamp import clamp
+def test_mid():   assert clamp(5, 0, 10) == 5
+def test_low():   assert clamp(-3, 0, 10) == 0
+def test_high():  assert clamp(15, 0, 10) == 10
+```
